@@ -53,3 +53,11 @@ window.addEventListener('resize', () => {
     }
   }, 120);
 });
+
+// Populate footer year dynamically
+try {
+  const footerYearEl = document.getElementById('footer-year');
+  if (footerYearEl) footerYearEl.textContent = new Date().getFullYear();
+} catch (e) {
+  // noop
+}

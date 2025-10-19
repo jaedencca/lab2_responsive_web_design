@@ -8,7 +8,10 @@
 </head>
 <body>
   <header>
-    <h1 class="title">My Wiki</h1>
+    <div class="title-with-icon">
+      <img src="resources/Earth-Icon-PNG.png" alt="World icon" class="title-icon" />
+      <h1 class="title">Learn About Creatures</h1>
+    </div>
 
     <nav class="navbar">
       <!-- use a button for accessibility and keyboard support -->
@@ -16,20 +19,77 @@
         <span class="hamburger" aria-hidden="true">&#9776;</span>
       </button>
       <ul class="nav-links" id="nav-links" role="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
-        <li><a href="#">About</a></li>
+  <li><a href="#" class="active">Home</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
     <section class="intro">
-      <h2>Welcome to My Wiki</h2>
-      <p>A simple place to explore and learn about various topics.</p>
+      <div class="intro-inner">
+        <div class="intro-media">
+          <!-- replace src with your actual image file in images/centipede.jpg -->
+          <img src="resources/Giant_centipede_1.webp" alt="Giant Amazonian centipede" />
+        </div>
+
+        <div class="intro-content">
+          <h2>The Giant Amazonian Centipede</h2>
+          <p>The Amazonian giant centipede (Scolopendra gigantea) is one of the largest and 
+            most fearsome centipedes in the world, capable of growing over 12 inches long. 
+            Native to the rainforests of South America, it’s a fast, aggressive predator 
+            that hunts insects, frogs, mice, and even small birds using venomous claws called 
+            forcipules. Despite its intimidating appearance, it plays an important ecological role by controlling pest populations.
+          </p>
+        </div>
+      </div>
+    </section>
+      <section class="creature-extra">
+        <div class="creature-extra-section">
+          <h3>Where It Lives</h3>
+          <p>
+            The Amazonian giant centipede is native to the tropical rainforests of northern South America, including countries like Brazil, Venezuela, Colombia, and Trinidad. It prefers humid, sheltered environments such as leaf litter, rotting logs, and under stones on the forest floor.
+          </p>
+        </div>
+        <div class="creature-extra-section">
+          <h3>What It Does</h3>
+          <p>
+            This centipede is a nocturnal predator, using its speed and venomous forcipules to hunt a wide range of prey. It can overpower insects, spiders, frogs, lizards, small mammals, and even birds, making it one of the top invertebrate predators in its habitat.
+          </p>
+        </div>
+        <div class="creature-extra-section">
+          <h3>Why It Matters</h3>
+          <p>
+            As an apex invertebrate predator, the Amazonian giant centipede helps regulate populations of other animals, maintaining ecological balance. Its unique adaptations and behaviors also make it a subject of scientific interest and a symbol of rainforest biodiversity.
+          </p>
+        </div>
+      </section>
+
+    <!-- New: video section with text adjacent -->
+    <section class="media-section">
+      <div class="media-inner">
+        <div class="media-video">
+          <!-- replace source with your video file at videos/centipede.mp4 -->
+          <video controls preload="metadata" poster="resources/default.NG.logo.dark.jpg">
+            <source src="resources/Giant_centipede_2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div class="media-content">
+          <h3>Watch: Hunting Behavior</h3>
+          <p>This clip shows a centipede in action as it hunts small prey. Note how it uses speed and venom to immobilize prey quickly. Observing this behavior helps researchers understand predator-prey dynamics in tropical ecosystems.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <script src="js/script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© <span id="footer-year"></span> My Wiki · All rights reserved · Example content for educational use</p>
+    </div>
+  </footer>
 </body>
 </html>
